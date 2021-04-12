@@ -49,7 +49,7 @@ function deleteCheck(e){
         const parent = item.parentElement;
         // amimation here
         parent.classList.add('fall');
-        removelocaltodos(item);
+        removelocaltodos(parent);
         parent.addEventListener('transitionend', function(){
             parent.remove();
         });
